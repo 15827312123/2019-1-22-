@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--header-->
+<header class="clearfix">
+    <h1 class="logo">
+        <a href=""></a>
+        <i>珠峰培训</i>
+    </h1>
+    <a  class="menu" href=""></a>
+</header>
+<!--banner-->
+<section class="banner">
+    <!--Swiper4.x使用方法里面的第二条-->
+    <!--<div class="swiper-container">-->
+        <!--<div class="swiper-wrapper">-->
+            <!--<div class="swiper-slide">Slide 1</div>-->
+            <!--<div class="swiper-slide">Slide 2</div>-->
+            <!--<div class="swiper-slide">Slide 3</div>-->
+            <!--&lt;!&ndash; 如果需要分页器 &ndash;&gt;-->
+            <!--<div class="swiper-pagination"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="height:100% ;background: url('images/3.png') center center no-repeat;background-size: cover"></div>
+            <div class="swiper-slide" style="height:100% ;background: url('images/4.png') center center no-repeat;background-size: cover"></div>
+            <div class="swiper-slide" style="height:100% ;background: url('images/5.png') center center no-repeat;background-size: cover"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<!--课程-->
+<section class="myclass clearfix">
+    <span class="bookIcon"></span>
+    <h3>我的课程</h3>
+</section>
+<!--图片列表-->
+<ul class="lists">
+    <li>
+        <a href="">
+            <section class="top"></section>
+            <section class="bottom">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <p>￥599.00元</p>
+            </section>
+        </a>
+    </li>
+    <li>
+        <a href="">
+            <section class="top"></section>
+            <section class="bottom">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <p>￥599.00元</p>
+            </section>
+        </a>
+    </li>
+    <li>
+        <a href="">
+            <section class="top"></section>
+            <section class="bottom">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <p>￥599.00元</p>
+            </section>
+        </a>
+    </li>
+    <li>
+        <a href="">
+            <section class="top"></section>
+            <section class="bottom">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <p>￥599.00元</p>
+            </section>
+        </a>
+    </li>
+    <li>
+        <a href="">
+            <section class="top"></section>
+            <section class="bottom">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <p>￥599.00元</p>
+            </section>
+        </a>
+    </li>
+    <li>
+        <a href="">
+            <section class="top"></section>
+            <section class="bottom">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <p>￥599.00元</p>
+            </section>
+        </a>
+    </li>
+    <li>
+        <a href="">
+            <section class="top"></section>
+            <section class="bottom">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <p>￥599.00元</p>
+            </section>
+        </a>
+    </li>
+</ul>
+<!--底部-->
+<ul class="footer clearfix">
+    <li class="index">
+        <a href="">
+            <div class="pic"></div>
+            <p>首页</p>
+        </a>
+    </li>
+    <li class="index" id="kc">
+        <a href="">
+            <div class="pic"></div>
+            <p>首页</p>
+        </a>
+    </li>
+    <li class="index" id="center">
+        <a href="">
+            <div class="pic"></div>
+            <p>首页</p>
+        </a>
+    </li>
+</ul>
+</body>
+</html>
+<!--移动端必备的secript-->
+<script>
+    function refreshRem() {
+        var desW = 640,
+            winW = document.documentElement.clientWidth||document.body.clientWidth;
+        ratio = winW / desW;
+        document.documentElement.style.fontSize = ratio * 100 + 'px';
+    }
+    refreshRem();
+    window.addEventListener('resize', refreshRem);
+
+</script>
+<!--js轮播图插件 ,下载的js插件引进来-->
+<script src="js/swiper.min.js"></script>
+<!--Swiper4.x使用方法里面的第五条-->
+<script>
+    window.onload = function() {
+        /*Swiper4.x
+        使用方法里面的第四条
+        第四条的代码一定要写在第五条里面
+        */
+        var mySwiper = new Swiper ('.swiper-container', {
+
+            loop: true, // 循环模式选项
+            /*这里,...需要手动添加*/
+            autoplay:true,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            }
+
+            /*!// 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },*/
+
+            /*!// 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },*/
+        })
+
+       /* var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+            autoplay:true,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            }
+
+
+
+
+        })*/
+
+
+
+
+
+
+
+    }
+</script>

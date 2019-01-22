@@ -1,0 +1,159 @@
+html{
+    font-size: 100px;
+}
+body{
+    background: #F8F8F8;
+}
+header{
+    height: 1.12rem;
+    background: #2A2A2A;
+}
+header .logo{
+    float: left;
+    height: 0.62rem;
+    overflow: hidden;
+    margin: 0.23rem 0.16rem 0.27rem;
+}
+.logo i{
+    margin-left: -999px;
+}
+header .logo a{
+    display: block;
+    width: 2.1rem;
+    height: 0.62rem;
+    background: url("../images/1.png") center center no-repeat;
+    background-size: cover;
+}
+header>.menu{
+    float: right;
+}
+header>a{
+    width: 0.36rem;
+    height: 0.32rem;
+    background: url("../images/2.png") center center no-repeat;
+    background-size: cover;
+    margin: 0.4rem 0.23rem;
+}
+/*banner区*/
+.banner{
+    height: 3.41rem;
+    background: #4dff1a;
+}
+/*Swiper4.x使用方法里面的第三条*/
+.swiper-container {
+    width:100%;
+    height: 100%;
+}
+
+/*
+<!--课程部分-->*/
+.myclass .bookIcon,h3{
+    float: left;
+}
+.myclass{
+    padding: 0.32rem 0.2rem;
+    box-sizing: border-box;
+}
+.myclass h3{
+    color:#4C4B4B;
+    font-size: 0.26rem;
+    font-weight: 400;
+    height: 0.35rem;
+    line-height: 0.35rem;
+}
+.myclass .bookIcon{
+    width: 0.29rem;
+    height: 0.35rem;
+    background: url("../images/6.png") center no-repeat;
+    background-size: cover;
+    margin-right: 0.12rem;
+}
+/*<!--图片列表-->*/
+.lists{
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    margin-bottom: 1.84rem;
+}
+.lists li{
+    box-shadow: 0 0.05rem 0.06rem rgba(178,178,178,.75);
+    margin-bottom: 0.35rem;
+}
+.lists>li>a{
+    display: block;
+}
+.lists>li>a>.top{
+    height: 2.8rem;
+    background:url("../images/7.png") center center no-repeat;
+    background-size: cover;
+}
+.bottom p{
+    color:#777777;
+    font-size: 0.28rem;
+    text-align: center;
+}
+.bottom p:last-child{
+    color:orangered;
+    margin-top: 0.25rem;
+}
+.bottom{
+    padding: 0.3rem 0 0.35rem;
+    box-sizing: border-box;
+    background: white;
+}
+/*底部*/
+.footer{
+    height: 1.08rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #6c6c6c;
+}
+.footer li{
+    width: 33.33%;
+    float: left;
+}
+.footer li>a{
+    display: block;
+}
+
+.footer>li .pic{
+    width: 0.46rem;
+    height: 0.32rem;
+    background: url("../images/15.png") center center no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.footer>li p{
+    text-align: center;
+    color: #ababab;
+}
+.footer .index .pic{
+    margin-top: 0.21rem;
+    margin-bottom: 0.08rem;
+}
+#kc .pic{
+    width: 0.4rem;
+    height: 0.39rem;
+    background-image: url("../images/17.png");
+    margin-top: 0.17rem;
+
+}
+#center .pic{
+    width: 0.36rem;
+    height: 0.36rem;
+    background-image: url("../images/13.png");
+    margin: 0.17rem auto 0.11rem;
+}
+.footer .index:hover p{
+    color:#188AE4;
+}
+.footer li:nth-child(1):hover .pic{
+    background-image: url("../images/16.png");
+}
+.footer #kc:hover .pic{
+    background-image: url("../images/18.png");
+}
+.footer #center:hover .pic{
+    background-image: url("../images/14.png");
+}
